@@ -5,4 +5,4 @@ Our Python style closely matches that of PEP-8. If there's anything that you can
 
 Below you'll find a few guides relating to varying aspects of our Python programming style.
 
-[Naming Things](naming.md)
+* [Naming Things](naming.md)
