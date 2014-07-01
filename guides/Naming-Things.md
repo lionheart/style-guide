@@ -99,6 +99,16 @@ subscription_is_paid = models.Subscription.objects.filter(id=123, paid=True).exi
 is_above_drinking_age = models.User.objects.filter(id=123, age__gte=21)
 ```
 
+In addition to "is", there are a few words commonly used to express boolean values. Here's a non-exhaustive list for the most common ones:
+
+Usage | Infix or Prefix
+----- | ------
+state (rarely has parameters) | `is_`
+ownership | `has_`
+ownership with parameter | `contains_`
+potential ability | `should_`
+current ability | `can_`
+
 #### Class References
 
 In some situations, it makes sense to use a variable to reference a generic class. For instance, in Django, you might present one of either two forms to users: one that lets you edit your first name, and another that just displays the first name but is non-editable. Instead of creating two different views, you may want to save the form class to a variable and just reference this variable when the form is needed.
@@ -140,16 +150,6 @@ class Category(models.Model):
     def has_permission(self, permission):
         pass
 ```
-
-As you may have noticed, there are a few prefixes that are used with method signatures. Here's a non-exhaustive list for the most common scenarios:
-
-Usage | Prefix
------ | ------
-state (rarely has parameters) | `is_`
-ownership | `has_`
-ownership with parameter | `contains_`
-potential ability | `should_`
-current ability | `can_`
 
 `is` can appear in the middle of a method name in the same scenarios as when it can appear in the middle of a variable name, e.g., when a method name follows the "N_is_A" pattern.
 
