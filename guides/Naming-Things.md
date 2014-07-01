@@ -144,8 +144,8 @@ As you may have noticed, there are a few prefixes that are used with method sign
 Usage | Prefix
 ----- | ------
 state (rarely has parameters) | `is_`
-possession | `has_`
-comprises parameter | `contains_`
+ownership | `has_`
+ownership with parameter | `contains_`
 potential ability | `should_`
 current ability | `can_`
 
