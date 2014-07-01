@@ -64,7 +64,7 @@ twenty_three_hours_from_now = now + datetime.timedelta(hours=23)
 If naming a value representing a count of objects, preface the variable with `num`.
 
 ```python
-num_orders_completed_successfully = models.Orders.objects.filter(completed=True)
+num_orders_completed_successfully = models.Order.objects.filter(completed=True)
 ```
 
 #### Lists, Dictionaries, Sets, and other "boxed" types
