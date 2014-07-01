@@ -140,7 +140,7 @@ class Category(models.Model):
 As you may have noticed, there are a few prefixes that are used with method signatures. Here's a non-exhaustive list for the most common scenarios:
 
 Usage | Prefix
---------------
+----- | ------
 state (rarely has parameters) | `is_`
 possession (usually takes one parameter) | `has_`
 potential ability | `should_`
