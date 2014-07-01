@@ -103,11 +103,16 @@ In addition to "is", there are a few words commonly used to express boolean valu
 
 Usage | Infix or Prefix
 ----- | ------
-state (rarely has parameters) | `is_`
+state | `is_`
 ownership | `has_`
-ownership with parameter | `contains_`
+ownership with object | `contains_`
 potential ability | `should_`
 current ability | `can_`
+
+```python
+product_has_description
+user_has_delete_permission
+```
 
 #### Class References
 
