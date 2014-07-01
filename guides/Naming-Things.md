@@ -69,21 +69,21 @@ num_orders_completed_successfully = models.Orders.objects.filter(completed=True)
 
 #### Lists, Dictionaries, Sets, and other "boxed" types
 
-A boxed type is any type that somehow "contains" other objects. Any boxed type should be descriptive of the individual elements of the objects it contains.
+A boxed type is any type that somehow "contains" other objects. Any boxed type should be descriptive of the individual element(s) of the object(s) it contains.
 
 ```python
 category_ids = r.smembers("categories")
 products = models.Product.objects.all()
 ```
 
-If there is any sort of filtering on a boxed type, you generally want to prepend the name with an adjective.
+If there is any sort of filtering on or action applied to a boxed type, you generally want to prepend the name with an adjective.
 
 ```python
 sold_out_products = models.Product.objects.filter(sold_out=True)
 booked_hotels = models.Hotel.objects.filter(booked=True)
 ```
 
-When a boxed type is ordered in a specific way, do not prepend with the ordering. Add it as a suffix. We do this so that orderings + filterings can be combined without conflict. If there is an ordering, ascending is assumed. If an ordering is descending, spell it out in the variable name.
+When a boxed type can be ordered in a specific way, do not prepend with the ordering. Add it as a suffix. We do this so that orderings + filterings can be combined without conflict. If there is an ordering, ascending is assumed. If an ordering is descending, spell it out in the variable name.
 
 ```python
 products_ordered_by_creation_date = models.Product.objects.order_by("created_on")
