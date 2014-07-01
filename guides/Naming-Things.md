@@ -113,9 +113,11 @@ if request.method == "POST":
 # Etc...
 ```
 
-### Methods
+### Methods / Functions
 
 Like variables, methods should also be lowercase_separated_by_underscores. If a method takes no arguments, it should be named pretty similarly as if it were a variable representing the same value.
+
+A function is just like a method, except it is not related to a specified class at runtime. The same rules apply to functions as they do to methods.
 
 ```python
 class Product(models.Model):
@@ -144,11 +146,13 @@ Usage | Prefix
 state (rarely has parameters) | `is_`
 possession (usually takes one parameter) | `has_`
 potential ability | `should_`
-ability now | `can_`
+current ability | `can_`
 
-#### Static Methods
+`is` can appear in the middle of a method name in the same scenarios as when it can appear in the middle of a variable name, e.g., when a method name follows the "N_is_A" pattern.
 
+#### Static / Class Methods
 
+Static methods generally follow the same naming pattern as instance methods.
 
 ### General Guidelines
 
