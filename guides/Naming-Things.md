@@ -121,6 +121,8 @@ should_shave_sheep
 
 In some situations, it makes sense to use a variable to reference a generic class. For instance, in Django, you might present one of either two forms to users: one that lets you edit your first name, and another that just displays the first name but is non-editable. Instead of creating two different views, you may want to save the form class to a variable and just reference this variable when the form is needed.
 
+This is an exception to the lowercase_with_underlines rule. You can name variables of this class like you would as if it were a class itself.
+
 ```python
 if user.is_staff():
     FirstNameForm = forms.EditableFirstNameForm
