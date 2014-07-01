@@ -96,7 +96,10 @@ Truthy values should be named in a way that would allow the variable to "sound r
 
 ```python
 subscription_is_paid = models.Subscription.objects.filter(id=123, paid=True).exists()
-is_above_drinking_age = models.User.objects.filter(id=123, age__gte=21)
+is_above_drinking_age = models.User.objects.filter(id=123, age__gte=21).exists()
+
+if subscription_is_paid and is_above_drinking_age:
+    pass
 ```
 
 In addition to "is", there are a few words commonly used to express boolean values. Here's a non-exhaustive list for the most common ones:
