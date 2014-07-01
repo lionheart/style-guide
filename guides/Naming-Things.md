@@ -109,9 +109,12 @@ ownership with object | `contains_`
 potential ability | `should_`
 current ability | `can_`
 
+Here are a few examples:
+
 ```python
 product_has_description
 user_has_delete_permission
+should_shave_sheep
 ```
 
 #### Class References
@@ -175,4 +178,11 @@ heavy <> light
 
     ```
 readonly > non-editable
+```
+
+3. Pretty much never use articles. There might be an exception here but I can't currently think of one.
+
+    ```
+highest_rated_products > the_highest_rated_products
+red_book > a_red_book
 ```
