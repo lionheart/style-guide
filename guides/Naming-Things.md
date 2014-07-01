@@ -52,8 +52,10 @@ one_week_ago = today - datetime.timedelta(days=7)
 yesterday = today - datetime.timedelta(days=1)
 
 now = datetime.datetime.now()
-one_hour_ago = now - datetime.timedelta(hours=1)
-nine_hours_ago = now - datetime.timedelta(hours=9)
+one_hour = datetime.timedelta(hours=1)
+nine_hours = datetime.timedelta(hours=9)
+one_hour_ago = now - one_hour
+nine_hours_ago = now - nine_hours
 twenty_three_hours_from_now = now + datetime.timedelta(hours=23)
 ```
 
