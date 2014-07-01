@@ -115,7 +115,40 @@ if request.method == "POST":
 
 ### Methods
 
-Like variables, methods should also be lowercase_separated_by_underscores.
+Like variables, methods should also be lowercase_separated_by_underscores. If a method takes no arguments, it should be named pretty similarly as if it were a variable representing the same value.
+
+```python
+class Product(models.Model):
+    def is_available(self):
+        pass
+
+    def formatted_price(self):
+        pass
+```
+
+For any methods that take a parameter, the rules change a bit. The parameter itself should be named after the type of the object it represents. Additionally, the object type should be suffixed to the method signature.
+
+```python
+class Category(models.Model):
+    def is_editable_by_user(self, user):
+        pass
+
+    def has_permission(self, permission):
+        pass
+```
+
+As you may have noticed, there are a few prefixes that are used with method signatures. Here's a non-exhaustive list for the most common scenarios:
+
+Usage | Prefix
+--------------
+state (rarely has parameters) | `is_`
+possession (usually takes one parameter) | `has_`
+potential ability | `should_`
+ability now | `can_`
+
+#### Static Methods
+
+
 
 ### General Guidelines
 
