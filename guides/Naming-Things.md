@@ -69,7 +69,7 @@ num_orders_completed_successfully = models.Orders.objects.filter(completed=True)
 
 #### Lists, Dictionaries, Sets, and other "boxed" types
 
-Any boxed type should be descriptive of the individual elements of the objects it contains.
+A boxed type is any type that somehow "contains" other objects. Any boxed type should be descriptive of the individual elements of the objects it contains.
 
 ```python
 category_ids = r.smembers("categories")
