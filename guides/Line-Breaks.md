@@ -37,7 +37,7 @@ error_messages = {
 }
 ```
 
-If a string is contained within a dictionary, the preferred course of action is to extract the string from the expression and refer to it via a variable.
+If a string is contained within a dictionary, the preferred course of action is to extract the string from the expression and refer to it via a variable (following the rules in [Naming-Things.md](Naming-Things.md), of course).
 
 ```python
 invalid_error_message = "Username cannot contain quotes, brackets, " \
@@ -56,3 +56,5 @@ Note: while the below is technically following PEP-8's line break rule, it's jus
 invalid_error_message = "Username cannot contain quotes, brackets, parenthes" \
         "es, ampersands, or punctuation."
 ```
+
+### Dictionaries
