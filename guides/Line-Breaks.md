@@ -16,7 +16,7 @@ We'll start off with a pretty straightforward example.
 nasa_description = "The National Aeronautics and Space Administration (NASA) is the agency of the United States government that is responsible for the nation's civilian space program and for aeronautics and aerospace research."
 ```
 
-When strings must overflow onto another line, always use the continuation character (`\`) to indicate a line break and repeat the quote used to signify to the reader that the line is the continuation of a string.
+When strings must overflow onto another line, always use the continuation character (`\`) to indicate a line break and repeat the quote on the beginning of the next line. We use this to signify to the reader that the line is the continuation of the previous line.
 
 If a space separates the end of one string and the beginning of the next line, place the extra space on the first line.
 
