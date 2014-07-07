@@ -6,3 +6,4 @@ Our Python style closely matches that of PEP-8. If there's anything that you can
 Below you'll find a few guides relating to varying aspects of our Python programming style.
 
 * [Naming Things](guides/Naming-Things.md)
+* [Line Breaks](guides/Line-Breaks.md)
