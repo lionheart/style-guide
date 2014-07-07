@@ -10,6 +10,8 @@ Whenever a block of code continues to the following line, always indent the next
 
 ### Strings
 
+We'll start off with a pretty straightforward example.
+
 ```python
 nasa_description = "The National Aeronautics and Space Administration (NASA) is the agency of the United States government that is responsible for the nation's civilian space program and for aeronautics and aerospace research."
 ```
@@ -25,7 +27,7 @@ nasa_description = "The National Aeronautics and Space Administration (NASA) is 
         "research."
 ```
 
-<hr/>
+Here's another example with a string within a dictionary.
 
 ```python
 error_messages = {
