@@ -16,6 +16,8 @@ nasa_description = "The National Aeronautics and Space Administration (NASA) is 
 
 When strings must overflow onto another line, always use the continuation character (`\`) to indicate a line break and repeat the quote used to signify to the reader that the line is the continuation of a string.
 
+<hr/>
+
 If a space separates the end of one string and the beginning of the next line, place the extra space on the first line.
 
 ```python
