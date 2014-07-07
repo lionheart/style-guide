@@ -50,7 +50,7 @@ error_messages = {
 }
 ```
 
-Note: while the below is technically following PEP-8's line break rule, it's just hard to read and looks bad. As a result, if the breaking character is in an awkward location within the string (gramatically, or for any other reason), you can shorten to less than 79 characters to a breaking location which makes reading the string easier.
+Note: while the below is technically following PEP-8's line break rule, it's just hard to read and looks bad. As a result, if the breaking character is in an awkward location within the string (grammatically, or for any other reason), you can shorten to less than 79 characters to a breaking location which makes reading the string easier.
 
 ```python
 invalid_error_message = "Username cannot contain quotes, brackets, parenthes" \
