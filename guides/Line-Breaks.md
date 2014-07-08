@@ -21,11 +21,22 @@ When strings must overflow onto another line, always use the continuation charac
 If a space separates the end of one string and the beginning of the next line, place the extra space on the first line.
 
 ```python
-nasa_description = "The National Aeronautics and Space Administration (NASA) is " \
-        "the agency of the United States government that is responsible for the " \
-        "nation's civilian space program and for aeronautics and aerospace " \
-        "research."
+nasa_description = "The National Aeronautics and Space Administration " \
+        "(NASA) is the agency of the United States government that is " \
+        "responsible for the nation's civilian space program and for " \
+        "aeronautics and aerospace research."
 ```
+
+Note: while the below is technically following PEP-8's line break rule, it's just hard to read and looks bad. As a result, if the breaking character is in an awkward location within the string (grammatically, or for any other reason), you can shorten to less than 79 characters to a breaking location which makes reading the string easier.
+
+```python
+nasa_description = "The National Aeronautics and Space Administration (NASA)" \
+        "is the agency of the United States government that is responsible f" \
+        "or the nation's civilian space program and for aeronautics and aero" \
+        "space research."
+```
+
+### Dictionaries
 
 Here's another example with a string within a dictionary.
 
@@ -49,12 +60,3 @@ error_messages = {
     'invalid': invalid_error_message
 }
 ```
-
-Note: while the below is technically following PEP-8's line break rule, it's just hard to read and looks bad. As a result, if the breaking character is in an awkward location within the string (grammatically, or for any other reason), you can shorten to less than 79 characters to a breaking location which makes reading the string easier.
-
-```python
-invalid_error_message = "Username cannot contain quotes, brackets, parenthes" \
-        "es, ampersands, or punctuation."
-```
-
-### Dictionaries
