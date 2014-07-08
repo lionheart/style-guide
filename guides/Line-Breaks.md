@@ -81,7 +81,7 @@ colors_two = [aqua_color, brown_color]
 colors_three = [aqua_color, brown_color, charcoal_color, emerald_color]
 ```
 
-When a list contains variables or contains strings equal to or greater than 20 characters, separate out the elements into separate lines. However, if this list contains less than three elements, the list need not be broken.
+When a list contains variables or contains strings equal to or greater than 20 characters, separate out the elements into separate lines. However&mdash;as mentioned above&mdash;if this list contains less than three elements, the list need not be broken.
 
 ```python
 colors_two = [aqua_color, brown_color]
