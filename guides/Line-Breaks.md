@@ -2,7 +2,7 @@
 
 ## Line Breaking
 
-A big component of following one of Python's most important rules--limiting lines to 80 characters (or 100, dependeing on your project's guidelines), is knowing when to break lines (code structure is another component which I'll tackle in another article).
+A big component of following one of Python's most important rules--limiting lines to 80 characters (or 100, depending on your project's guidelines), is knowing when to break lines (code structure is another component which I'll tackle in another article).
 
 ### General Rules
 
