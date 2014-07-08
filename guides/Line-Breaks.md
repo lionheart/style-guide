@@ -36,7 +36,7 @@ nasa_description = "The National Aeronautics and Space Administration (NASA)" \
         "space research."
 ```
 
-### Dictionaries
+### Dictionaries, Lists, and Sets
 
 Here's another example with a string within a dictionary.
 
@@ -59,4 +59,36 @@ error_messages = {
     'already_taken': "This username has already been taken.",
     'invalid': invalid_error_message
 }
+```
+
+The same rule applies to lists and sets.
+
+```python
+colors = ["aqua", "brown", "charcoal", "emerald", "fuschia", "green", "indigo", "khaki", "lime", "maroon"]
+```
+
+The difference with dictionaries, however, is that it's encouraged to list multiple elements on the same line when the list elements are of a small size (in general, less than 20 characters) and strings, OR if there are less than three elements in the list.
+
+```python
+colors = ["aqua", "brown", "charcoal", "emerald", "fuschia", "green",
+        "indigo", "khaki", "lime", "maroon"]
+```
+
+Here are two more complicated examples.
+
+```python
+colors_two = [aqua_color, brown_color]
+colors_three = [aqua_color, brown_color, charcoal_color, emerald_color]
+```
+
+When a list contains variables or contains strings equal to or greater than 20 characters, separate out the elements into separate lines. However, if this list contains less than three elements, the list need not be broken.
+
+```python
+colors_two = [aqua_color, brown_color]
+colors_three = [
+    aqua_color,
+    brown_color,
+    charcoal_color,
+    emerald_color
+]
 ```
