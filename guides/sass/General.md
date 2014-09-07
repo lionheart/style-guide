@@ -1,3 +1,5 @@
+[Back to Home](../../README.md)
+
 Sass Style Guide
 ================
 
