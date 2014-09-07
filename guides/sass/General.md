@@ -11,7 +11,7 @@ Strict Selectors
 
 Whenever possible, use strict CSS selectors as opposed to simple container selectors. E.g., the following is *bad*:
 
-```css
+```sass
 div.content {
   h1 {
   }
@@ -20,7 +20,7 @@ div.content {
 
 But this is good:
 
-```css
+```sass
 div.content {
   > h1 {
   }
