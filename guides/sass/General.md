@@ -37,7 +37,7 @@ Always specify the element upon which a class or id relates to. For instance, `d
 
 ### Simple text
 
-`text-align: center` will pretty much always work.
+`text-align: center` will pretty much always work for any element with `display: inline;`.
 
 ### Images
 
