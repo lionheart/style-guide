@@ -10,20 +10,20 @@ Sass Style Guide
 Strict Selectors
 ----------------
 
-Whenever possible, use strict CSS selectors as opposed to simple container selectors. E.g., the following is *bad*:
-
-```sass
-div.content {
-  h1 {
-  }
-}
-```
-
-But this is good:
+Whenever possible, use strict CSS selectors as opposed to simple container selectors. E.g., the following is preferred...
 
 ```sass
 div.content {
   > h1 {
+  }
+}
+```
+
+over this:
+
+```sass
+div.content {
+  h1 {
   }
 }
 ```
