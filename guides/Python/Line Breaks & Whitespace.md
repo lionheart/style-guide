@@ -92,3 +92,33 @@ colors_three = [
     emerald_color
 ]
 ```
+
+### Objects with Attributes
+
+There might be situations where an object can be altered or manipulated by chaining attributes to it. We see this a lot when using the Django ORM, where objects in the database can be filtered by many parameters, which can end up taking much more than our line-spacing limit. Here's an example for how we might break up a long database query.
+
+```python
+users = models.User.objects.annotate(num_orders=Count('orders')).filter(approved=True, birthdate__year=2014).exclude(num_orders=0)
+```
+
+Preferred:
+
+```python
+users = models.User.objects.annotate(num_orders=Count('orders') \
+    .filter(approved=True, birthdate__year=2014) \
+    .exclude(num_orders=0)
+```
+
+If an individual method call within the group of attribute calls itself contains multiple method parameters, we split those up as we would a dictionary or list (see above).
+
+```python
+users = models.User.objects.annotate(num_orders=Count('orders')) \
+    .filter(
+        preferred_os=MAC_OS_X,
+        approved=True,
+        birthdate__year=2014
+    ) \
+    .exclude(num_orders=0)
+```
+
+
