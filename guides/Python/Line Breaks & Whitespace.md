@@ -95,7 +95,7 @@ colors_three = [
 
 ### Objects with Attributes
 
-There might be situations where an object can be altered or manipulated by chaining attributes to it. We see this a lot when using the Django ORM, where objects in the database can be filtered by many parameters, which can end up taking much more than our line-spacing limit. Here's an example for how we might break up a long database query.
+There might be situations where an object can be altered or manipulated by chaining attributes to it. We see this a lot when using the Django ORM, where objects in the database can be filtered by many parameters, which can end up taking up more characters than our limit. Here's an example for how we might break up a long database query.
 
 ```python
 users = models.User.objects.annotate(num_orders=Count('orders')).filter(approved=True, birthdate__year=2014).exclude(num_orders=0)
